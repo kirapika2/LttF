@@ -3,19 +3,19 @@ let sayaka = 0;
 let rurino = 0;
 
 document.addEventListener('keydown', (event) => {
-  if (event.ctrlKey && event.code == "KeyK") {
+  if (event.ctrlKey && event.shiftKey && event.code == "KeyK") {
     kaho += 1;
     document.getElementById('kaho_area').textContent = kaho;
   }
   if (kaho == 3) { changeLeftBG(); }
 
-  if (event.ctrlKey && event.code == "KeyS") {
+  if (event.ctrlKey && event.shiftKey && event.code == "KeyS") {
     sayaka += 1;
     document.getElementById('sayaka_area').textContent = sayaka;
   }
   if (sayaka == 3) { changeCenterBG(); }
 
-  if (event.ctrlKey && event.code == "KeyR") {
+  if (event.ctrlKey && event.shiftKey && event.code == "KeyL") {
     rurino += 1;
     document.getElementById('rurino_area').textContent = rurino;
   }
